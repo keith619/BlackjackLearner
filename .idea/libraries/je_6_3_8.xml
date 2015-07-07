@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="je-6.3.8">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/je-6.3.8/lib/je-6.3.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

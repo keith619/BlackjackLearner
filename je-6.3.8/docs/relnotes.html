@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+  <title>Berkeley DB Java Edition Release Notes</title>
+</head>
+
+<body>
+
+<div class="docMain">
+<center>
+<h1>Oracle Berkeley DB Java Edition 12c R1<br>
+Release Notes</h1>
+</center>
+
+<!-- Note: RELEASE_VERSION and DATE are set by ant -->
+<p class="releaseInfo">Release 6.3.8, 2015-05-09 05:00:29 UTC</p>
+
+<h2><a name="overview">Overview</a></h2>
+<p>
+Berkeley DB Java Edition (JE) is a 100% pure Java embedded, transactional data
+store. It supplies a key/object data model with indexing, full transactional
+ACID support, POJO APIs and High Availability/Replication.
+<p>
+Note that in JE 6.0 and later, the Java compatibility requirement for JE is
+Java SE 7 and the open source license is the GNU AFFERO GENERAL PUBLIC LICENSE.
+<p>
+JE is compatible with Java SE 7 and later, and has been tested and certified
+against Oracle JDK 7u67 and IBM J9 7.0. We encourage you to upgrade to the
+latest Java releases to take advantage of the latest bug fixes and performance
+improvements.
+<p>
+In JE 6.2 the on-disk file format moved to 10.  The file format change is
+forward compatible in that JE files created with release 6.1 and earlier can be
+read when opened with JE 6.2 or later. The change is not backward compatible in
+that files created with JE 6.2 or later cannot be read by earlier releases.
+After an existing environment is opened read/write using JE 6.2, the
+environment can no longer be read by earlier releases.
+<p>
+Be sure to see the <a href="changelog.html">change log</a> for more information
+about upgrading from earlier releases.
+<p>
+This release contains a number of additional changes, including:
+<ol>
+    <li>
+    Performance has been improved for applications where all internal Btree
+    nodes do not fit in cache, particularly when performing record insertions.
+    [#23680] [#23768]
+    </li>
+    <li>
+    Performance has been improved for secondary DB read operations. [#23326]
+    </li>
+    <li>
+    Several important bugs have been fixed.
+    </li>
+</ol>
+For the complete and detailed list of changes, see
+<a href="changelog.html">the change log page</a>.<br>
+</p>
+<font size="1">Copyright (c) 2002, 2015 Oracle and/or its affiliates.  All rights reserved.</font>
+</div>
+<!-- end docMain -->
+</body>
+</html>
